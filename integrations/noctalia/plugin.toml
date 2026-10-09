@@ -1,0 +1,13 @@
+id = "local/omagai"
+name = "Omagai"
+version = "1.0.0"
+plugin_api = 24
+author = "community"
+description = "The 72 microseasons of the Japanese calendar in the bar."
+
+[[widget]]
+id = "omagai"
+entry = "omagai.luau"
+
+  [widget.actions]
+  middle = "none"

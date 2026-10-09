@@ -1,0 +1,84 @@
+/* Matches the Omarchy original: monospace, near-black, quiet greys. */
+
+.popup-menu-content.omagai-menu {
+    background-color: #0c0c0c;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 18px 20px;
+}
+
+.omagai-menu .popup-menu-item {
+    padding: 0;
+    background-color: transparent;
+}
+
+.omagai-panel {
+    width: 460px;
+    spacing: 14px;
+    color: #e6e6e6;
+}
+
+/* Set on each label, not the panel: St didn't carry it down from the box. */
+.omagai-name,
+.omagai-romaji,
+.omagai-note,
+.omagai-when,
+.omagai-sekki {
+    font-family: "CaskaydiaMono Nerd Font";
+}
+
+.omagai-hero {
+    spacing: 22px;
+}
+
+.omagai-kanji {
+    font-family: "Noto Sans CJK JP", sans-serif;
+    font-size: 34pt;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+.omagai-emoji {
+    font-family: "Noto Color Emoji";
+    font-size: 26pt;
+}
+
+.omagai-names {
+    spacing: 6px;
+}
+
+.omagai-name {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.omagai-romaji {
+    font-size: 11pt;
+    letter-spacing: 3px;
+    color: #8a8a8a;
+}
+
+.omagai-separator {
+    height: 1px;
+    margin: 4px 0;
+    background-color: #2a2a2a;
+}
+
+.omagai-note {
+    font-size: 11pt;
+    letter-spacing: 1px;
+    color: #cfcfcf;
+}
+
+.omagai-when {
+    font-size: 11pt;
+    letter-spacing: 1px;
+    color: #e6e6e6;
+}
+
+.omagai-sekki {
+    font-size: 10pt;
+    letter-spacing: 1px;
+    color: #8a8a8a;
+}

@@ -1,0 +1,9 @@
+{
+  "uuid": "omagai@local",
+  "name": "Omagai",
+  "description": "The 72 microseasons of the Japanese calendar, quietly kept in the top bar. Port of tiho's Omarchy plugin.",
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.omagai",
+  "url": "https://github.com/zamak/omagai",
+  "version": 1
+}

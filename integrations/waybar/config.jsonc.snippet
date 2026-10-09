@@ -1,0 +1,11 @@
+// Add this to your waybar config.jsonc "modules-right" (or "modules-center" / "modules-left"):
+// "custom/omagai"
+
+"custom/omagai": {
+    "exec": "gjs -m ~/.config/waybar/scripts/omagai.js",
+    "on-click": "gjs -m ~/.config/waybar/scripts/omagai-popup.js",
+    "on-click-right": "gjs -m ~/.config/waybar/scripts/omagai.js cycle",
+    "return-type": "json",
+    "interval": 600,
+    "tooltip": false
+}

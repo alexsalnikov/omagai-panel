@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.omagai" path="/org/gnome/shell/extensions/omagai/">
+    <key name="bar-label" type="s">
+      <choices>
+        <choice value="char"/>
+        <choice value="short"/>
+        <choice value="kanji"/>
+        <choice value="name"/>
+      </choices>
+      <default>'char'</default>
+      <summary>Top bar text</summary>
+      <description>char (first kanji only), kanji, short or name. Right-click the label to cycle.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,4 @@
+*.pid
+gschemas.compiled
+.cache/
+.DS_Store
