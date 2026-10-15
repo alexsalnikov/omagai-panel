@@ -1,0 +1,66 @@
+{
+  "id": "omagai",
+  "name": "Omagai",
+  "version": "0.1.0",
+  "author": "Alex Salnikov <alex.salnikov.il@gmail.com>",
+  "description": "The 72 microseasons (七十二候) of the Japanese calendar on the bar, with a season card on click.",
+  "license": "MIT",
+  "official": false,
+  "hosts": [
+    "topbarGlyph"
+  ],
+  "entryPoints": {
+    "main": "service/Main.qml",
+    "content": "content/Widget.qml",
+    "panel": "content/Panel.qml"
+  },
+  "panel": {
+    "width": 440
+  },
+  "files": [
+    "service/Seasons.js",
+    "assets/preview-widget.png"
+  ],
+  "capabilities": {
+    "densities": [
+      "glyph",
+      "compact"
+    ]
+  },
+  "defaults": {
+    "host": "topbarGlyph",
+    "label": "Omagai"
+  },
+  "dependencies": {
+    "commands": []
+  },
+  "metadata": {
+    "settings": [
+      {
+        "key": "labelStyle",
+        "type": "choice",
+        "label": "Bar label",
+        "group": "Omagai",
+        "default": "char",
+        "options": [
+          {
+            "value": "char",
+            "label": "One kanji (風)"
+          },
+          {
+            "value": "kanji",
+            "label": "Full kanji (東風解凍)"
+          },
+          {
+            "value": "short",
+            "label": "Short name"
+          },
+          {
+            "value": "name",
+            "label": "Full name"
+          }
+        ]
+      }
+    ]
+  }
+}

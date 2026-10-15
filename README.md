@@ -2,7 +2,7 @@
 
 The **72 microseasons** of the traditional Japanese calendar (*Kō* / 候 and *Sekki* / 節気), quietly kept in your desktop status bar.
 
-Inspired by and ported from tiho's Omarchy plugin, with support for **Noctalia**, **Waybar**, **GNOME Shell**, and **Niri** (Wayland).
+Inspired by and ported from tiho's Omarchy plugin, with support for **Noctalia**, **Waybar**, **GNOME Shell**, **Ryoku**, and **Niri** (Wayland).
 
 ---
 
@@ -20,6 +20,7 @@ Inspired by and ported from tiho's Omarchy plugin, with support for **Noctalia**
   - **Noctalia**: Native Luau plugin widget (`local/omagai:omagai`).
   - **Waybar**: Lightweight GJS module.
   - **GNOME Shell**: Native top-bar extension (`omagai@local`).
+  - **Ryoku**: Native Quickshell bar plugin with a themed QML season card.
   - **Niri**: Floating window rules for popup placement.
 
 ---
@@ -37,6 +38,7 @@ omagai-panel/
 │   ├── noctalia/             # Noctalia Luau widget plugin (plugin.toml + omagai.luau)
 │   ├── waybar/               # Waybar script (omagai.js) and config snippet
 │   ├── gnome-shell/          # GNOME Shell extension (extension.js, metadata, CSS, schemas)
+│   ├── ryoku/                # Ryoku (Quickshell) bar plugin: manifest, QML service/widget/panel
 │   └── niri/                 # Niri window-rules snippet for top-right floating
 ├── install.sh                # One-step installation script
 ├── .gitignore
@@ -115,6 +117,15 @@ window-rule {
 ```bash
 gnome-extensions enable omagai@local
 ```
+
+### 5. Ryoku
+The Ryoku plugin is self-contained (pure QML, no GJS needed) and installs with
+Ryoku's own plugin manager (`install.sh` is not needed):
+```bash
+ryoku plugin add integrations/ryoku --bar --yes
+```
+It appears on the QS Bar; the label style is under QS Bar Settings >
+Community > Omagai. See [integrations/ryoku/README.md](integrations/ryoku/README.md).
 
 ---
 
